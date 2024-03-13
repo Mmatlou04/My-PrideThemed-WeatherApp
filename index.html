@@ -7,42 +7,49 @@
   </head>
 
   <body>
-    <header>
-      <form>
-        <input
-          type="search"
-          placeholder="Enter a city, you gay beaut"
-          required
-        />
-        <input type="submit" value="search" />
-      </form>
-    </header>
-    <main>
-      <div>
-        <h1>Polokwane</h1>
-        <p>
-          Wednesday 18:00 Mostly Cloudy<br />
-          Humidity:20%,Wind:13 km/h
-        </p>
-      </div>
-      <div>⛅ 33℃</div>
-    </main>
-    <footer>
-      Coded by
-      <a href="https://github.com/Mmatlou04" target="_blank"
-        >Matlou Phuti Phele</a
-      >
-      ,
-      <a
-        href="https://github.com/Mmatlou04/My-PrideThemed-WeatherApp"
-        target="_blank"
-      >
-        open-sourced on GitHub</a
-      >
-      and hosted on
-      <a href="https://app.netlify.com/teams/mmatlou04/sites" target="_blank"
-        >netlify</a
-      >
-    </footer>
+    <div class="weatherApp-Container">
+      <header>
+        <form>
+          <input
+            type="search"
+            placeholder="Enter a city, you gay beaut"
+            required
+            class="search-input"
+          />
+          <input type="submit" value="search" class="submit-input" />
+        </form>
+      </header>
+      <main>
+        <div>
+          <h1>Polokwane</h1>
+          <section>
+            Wednesday 18:00 Mostly Cloudy<br />
+            Humidity:<strong>20%</strong>,Wind:<strong>13</strong> km/h
+          </section>
+        </div>
+        <div class="weather-temperature">
+          <span class="weather-icon">⛅</span>
+          <span class="weather-degree">33</span
+          ><span class="celcius-emo">℃</span>
+        </div>
+      </main>
+      <footer>
+        Coded by
+        <a href="https://github.com/Mmatlou04" target="_blank"
+          >Matlou Phuti Phele</a
+        >
+        ,
+        <a
+          href="https://github.com/Mmatlou04/My-PrideThemed-WeatherApp"
+          target="_blank"
+        >
+          open-sourced on GitHub</a
+        >
+        and hosted on
+        <a href="https://app.netlify.com/teams/mmatlou04/sites" target="_blank"
+          >netlify</a
+        >
+      </footer>
+    </div>
   </body>
 </html>
