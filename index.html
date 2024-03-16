@@ -5,24 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Pride Themed Weather</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
   </head>
 
   <body>
     <div class="weatherApp-Container">
       <header>
-        <form>
+        <form id="search-form">
           <input
             type="search"
             placeholder="Enter a city, you gay beaut"
             required
             class="search-input"
+            id="search-form-input"
           />
           <input type="submit" value="search" class="search-button" />
         </form>
       </header>
       <main>
         <div>
-          <h1>Polokwane</h1>
+          <h1 id="city">Polokwane</h1>
           <section class="weatherApp-section">
             Wednesday 18:00 Mostly Cloudy<br />
             Humidity:<strong>20%</strong>,Wind:<strong>13</strong> km/h
@@ -30,7 +32,7 @@
         </div>
         <div class="weather-temperature">
           <span class="weather-icon">⛅</span>
-          <span class="weather-degree">33</span
+          <span class="weather-degree" id="temperature">33</span
           ><span class="weather-unit">℃</span>
         </div>
       </main>
@@ -52,5 +54,6 @@
         >
       </footer>
     </div>
+    <script src="src/app.js"></script>
   </body>
 </html>
