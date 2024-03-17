@@ -25,15 +25,20 @@
       <main>
         <div>
           <h1 id="city">Polokwane</h1>
-          <section class="weatherApp-section">
-            Wednesday 18:00 Mostly Cloudy<br />
-            Humidity:<strong>20%</strong>,Wind:<strong>13</strong> km/h
-          </section>
+          <div class="weatherApp-section">
+            <span id="time">Wednesday 18:00</span>
+            <span id="description">Mostly Cloudy</span>
+            <br />
+            Humidity:<strong id="humidity"></strong>,Wind:<strong
+              id="wind-speed"
+            ></strong>
+            km/h
+          </div>
         </div>
         <div class="weather-temperature">
-          <span class="weather-icon">⛅</span>
-          <span class="weather-degree" id="temperature">33</span
-          ><span class="weather-unit">℃</span>
+          <div class="weather-icon" id="icon"></div>
+          <span class="weather-degree" id="temperature"></span>
+          <span class="weather-unit">℃</span>
         </div>
       </main>
       <footer>

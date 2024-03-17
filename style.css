@@ -33,11 +33,15 @@ header {
 .search-button {
     background: #D0AFBF;
     padding: 10px 30px;
-    border: none;
+    border:none;
     font-size: 16px;
     margin-left: 5px;
     border-radius: 6px;
     color: white;
+}
+.search-button:hover{
+     background-color: green;
+     transition:0s;
 }
 
 main {
@@ -57,6 +61,7 @@ h1 {
 }
 
 .weatherApp-section {
+
     font-size: 16px;
     color: rgba(39, 33, 66, 0.4);
     line-height: 24px;
@@ -69,11 +74,15 @@ h1 {
 
 .weather-temperature {
     display: flex;
+    justify-content: end;
+    margin-top: -30px;
 }
 
 .weather-icon {
-    font-size: 44px;
-    margin-top: 22px;
+    width: 60px;
+    margin-top: 2px;
+    margin-right: 4px;
+    
 }
 
 .weather-degree {
