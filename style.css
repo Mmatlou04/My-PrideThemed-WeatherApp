@@ -1,56 +1,62 @@
 body {
     background-image: url("Images/PrideColours.jpg");
     font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
 }
 
 a {
     color: #885df1;
 }
 
-.weatherApp-Container {
+.weatherApp-container {
     background: #E5BE39;
     max-width: 600px;
     margin: 45px auto;
     box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
     border-radius: 16px;
     padding: 30px;
+    text-align: center;
 }
 
 header {
     border-bottom: 1px solid #f9f7fe;
-    padding: 0 0 30px 0;
+    padding-bottom: 30px;
+}
+
+#search-form {
+    display: flex;
+    justify-content: center;
 }
 
 .search-input {
     background-color: white;
     border: none;
     border-radius: 6px;
-    width: 80%;
+    width: 70%;
     font-size: 16px;
-    padding: 10px 20px;
+    padding: 10px;
 }
 
 .search-button {
     background: #D0AFBF;
-    padding: 10px 30px;
-    border:none;
+    padding: 10px 20px;
+    border: none;
     font-size: 16px;
     margin-left: 5px;
     border-radius: 6px;
     color: white;
-}
-.search-button:hover{
-     background-color: green;
-     transition:0s;
+    cursor: pointer;
 }
 
-main {
-    padding: 30px 0;
+.search-button:hover {
+    background-color: green;
+    transition: 0.3s;
 }
 
-.weather-app-data {
-    display: flex;
-    justify-content: space-between;
+.current-weather {
+    margin: 20px 0;
 }
 
 h1 {
@@ -61,7 +67,6 @@ h1 {
 }
 
 .weatherApp-section {
-
     font-size: 16px;
     color: rgba(39, 33, 66, 0.4);
     line-height: 24px;
@@ -74,21 +79,15 @@ h1 {
 
 .weather-temperature {
     display: flex;
-    justify-content: end;
-    margin-top: -30px;
+    justify-content: center;
+    align-items: center;
+    font-size: 88px;
+    font-weight: bold;
 }
 
 .weather-icon {
     width: 60px;
-    margin-top: 2px;
     margin-right: 10px;
-    
-}
-
-.weather-degree {
-    font-size: 88px;
-    margin-left: 10px;
-    font-weight: bold;
 }
 
 .weather-unit {
@@ -96,23 +95,24 @@ h1 {
     font-size: 28px;
 }
 
+.weather-forecast {
+    margin-top: 20px;
+}
 
-
-
-
-
-
-
-
-
-
-
+.weather-forecast .forecast-day {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f8f8f8;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
 
 footer {
     border-top: 1px solid #f9f7fe;
-    padding: 30px 0 0 0;
-    text-align: center;
+    padding-top: 30px;
     font-size: 14px;
     color: rgba(0, 0, 0, 0.6);
-     background: linear-gradient(137.9deg, rgb(78, 156, 226) 7.8%, rgb(62, 146, 69) 16%, rgb(251, 220, 23) 32.7%, rgb(242, 160, 35) 50.4%, rgb(253, 12, 12) 71.5%, rgb(192, 26, 129) 83.1%);
+    background: linear-gradient(137.9deg, rgb(78, 156, 226) 7.8%, rgb(62, 146, 69) 16%, rgb(251, 220, 23) 32.7%, rgb(242, 160, 35) 50.4%, rgb(253, 12, 12) 71.5%, rgb(192, 26, 129) 83.1%);
+    text-align: center;
 }

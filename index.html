@@ -7,9 +7,8 @@
     <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
   </head>
-
   <body>
-    <div class="weatherApp-Container">
+    <div class="weatherApp-container">
       <header>
         <form id="search-form">
           <input
@@ -19,46 +18,43 @@
             class="search-input"
             id="search-form-input"
           />
-          <input type="submit" value="search" class="search-button" />
+          <input type="submit" value="Search" class="search-button" />
         </form>
       </header>
       <main>
-        <div>
+        <div class="current-weather">
           <h1 id="city">Polokwane</h1>
           <div class="weatherApp-section">
             <span id="time">Wednesday 18:00</span>
             <span id="description">Mostly Cloudy</span>
             <br />
-            Humidity:<strong id="humidity"></strong>,Wind:<strong
-              id="wind-speed"
-            ></strong>
-            km/h
+            Humidity: <strong id="humidity">70%</strong>, Wind:
+            <strong id="wind-speed">15</strong> km/h
+          </div>
+          <div class="weather-temperature">
+            <img src="" alt="Weather Icon" id="icon" class="weather-icon" />
+            <span class="weather-degree" id="temperature">24</span>
+            <span class="weather-unit">℃</span>
           </div>
         </div>
-        <div class="weather-temperature">
-          <div class="weather-icon" id="icon"></div>
-          <span class="weather-degree" id="temperature"></span>
-          <span class="weather-unit">℃</span>
-        </div>
+        <div class="weather-forecast" id="forecast"></div>
       </main>
       <footer>
         Coded by
         <a href="https://github.com/Mmatlou04" target="_blank"
           >Matlou Phuti Phele</a
-        >
-        ,
+        >,
         <a
           href="https://github.com/Mmatlou04/My-PrideThemed-WeatherApp"
           target="_blank"
-        >
-          open-sourced on GitHub</a
+          >open-sourced on GitHub</a
         >
         and hosted on
         <a href="https://app.netlify.com/teams/mmatlou04/sites" target="_blank"
-          >netlify</a
+          >Netlify</a
         >
       </footer>
     </div>
-    <script src="src/app.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
